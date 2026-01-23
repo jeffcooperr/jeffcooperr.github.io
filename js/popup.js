@@ -19,11 +19,10 @@ function openPopup(project) {
             break;
         case 'BTV':
             content += '<h1>Subletting Website</h1>';
-            popupImg.src = 'images/sublet.png';
-            popupImg.classList.add('blurred');
+            popupImg.src = 'images/sbltr.png';
             content += '<p>This website is designed to help students find and post sublet opportunities. As many students look for off-campus housing or need to sublet their space, this website provides students with a simple way to post and browse available sublets. Users must sign up to post a listing or view contact details, ensuring all users are verified students through their university emails.</p>'
             content += '<br>';
-            content += '<p>Coming Soon</p>'
+            content += '<a class="github-links" href="https://github.com/jeffcooperr/sbltr">Github Repository</a>'
             break;
         case 'NC':
             content += '<h1>Neural Canvas</h1>';
@@ -38,6 +37,15 @@ function openPopup(project) {
             content += '<p>This project implements a simple game called "Lights Out" using OpenGL and GLFW in C++. The objective of the game is to turn off all the lights on a grid to win. Clicking on a light toggles its state and affects the neighboring lights. The game provides three states: start, play, and game over, each with different functionalities.</p>'
             content += '<br>';
             content += '<a class="github-links" href="https://github.com/jeffcooperr/lights-out">Github Repository</a>'            
+            break;
+        case 'DEMO':
+            content += '<h1>Fab Simulation</h1>';
+            popupImg.src = 'images/demo.gif';
+            content += '<p>A simple simulation of a manufacturing facility with 6 tools that cycle through different states: running, idle, error, and down. Used matplotlib for the main visual and streamlit for hosting and analytics as well as other outputs.</p>'
+            content += '<br>';
+            content += '<a class="github-links" href="https://fab-sim.streamlit.app">Live Site</a>'
+            content += '<br>';
+            content += '<a class="github-links" href="https://github.com/jeffcooperr/fab-sim">Github Repository</a>'
             break;
         default:
             popup.style.display = "none";
