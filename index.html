@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media=" (max-width: 900px)" href="css/tablet.css" type="text/css">
+        <link rel="stylesheet" media=" (max-width: 600px)" href="css/phone.css" type="text/css">
+        <link rel="icon" href="images/jc.png">
+
+        <script src="https://kit.fontawesome.com/bf5a210794.js" crossorigin="anonymous"></script>
+        <title>Jeff Cooper 💻</title>
+    </head>
+    <body>
+        <header class="profile-header">
+                <h1>Jeff Cooper</h1>
+                <p><a href="tel:9788061525">(978) 806-1525</a> | <a href="mailto:jeff.cooper@uvm.edu">jeff.cooper@uvm.edu</a></p>
+                <img class="pfp" src="images/pfp.jpg" alt="Profile Picture">
+                <nav class="profile-links">
+                    <p>                
+                        <a class="resume" href="resume.pdf">Resume</a>
+                    </p>
+                    <p class="icons">
+                        <a href="http://github.com/jeffcooperr" class="fa-brands fa-square-github"></a>  
+                        <a href="http://www.linkedin.com/in/jeffcooperr" class="fa-brands fa-linkedin"></a>
+                    </p>
+                </nav>
+                <section class="uvm-stuff">
+                    <p>Burlington, VT & Boston, MA</p>
+                    <p>Computer Science at The University of Vermont</p>
+                    <p>Math & Business Administration Minors</p>
+                </section>
+        </header>
+
+        <div id="popup" class="popup" onclick="closePopup(event)">
+            <div class="popupStack" onclick="event.stopPropagation()">
+                <span class="close" onclick="closePopup(event)">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                </span>
+                <div class="popup-content-wrapper">
+                    <div id="popup-content" class="popup-content"></div>
+                    <img id="popup-img" class="popup-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="projects-container">
+                <div class="project">
+                    <img onclick="openPopup('ATO')" id="blurred" class="projects" src="images/analytics.png" alt="Against the Odds">
+                </div>
+                
+                <div class="project">
+                    <img onclick="openPopup('BTV')" id="blurred" class="projects" src="images/sublet.png" alt="BTV Sublet">
+                </div>
+                
+                <div class="project">
+                    <img onclick="openPopup('NC')" class="projects" src="images/neuralcanvas.png" alt="Neural Canvas">
+                </div>
+
+                <div class="project">
+                    <img onclick="openPopup('LO')" class="projects" src="images/lightsout.gif" alt="Lights Out">
+                </div>
+            </div>
+        </div>
+        
+    <script src="js/popup.js"></script>
+
+    </body>
+
+</html>
