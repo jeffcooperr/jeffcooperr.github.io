@@ -13,23 +13,34 @@
     </head>
     <body>
         <header class="profile-header">
-                <h1>Jeff Cooper</h1>
-                <p><a href="tel:9788061525">(978) 806-1525</a> | <a href="mailto:jeff.cooper@uvm.edu">jeff.cooper@uvm.edu</a></p>
+            <div class="profile-inner">
                 <img class="pfp" src="images/pfp.jpg" alt="Profile Picture">
-                <nav class="profile-links">
-                    <p>                
-                        <a class="resume" href="resume.pdf">Resume</a>
+
+                <div class="profile-top">
+                    <h1 class="profile-name">Jeff Cooper</h1>
+                    <p class="profile-contact">
+                        <a href="tel:9788061525">(978) 806-1525</a>
+                        <span class="sep">|</span>
+                        <a href="mailto:jeffhcooper1@gmail.com">jeffhcooper1@gmail.com</a>
                     </p>
-                    <p class="icons">
-                        <a href="http://github.com/jeffcooperr" class="fa-brands fa-square-github"></a>  
-                        <a href="http://www.linkedin.com/in/jeffcooperr" class="fa-brands fa-linkedin"></a>
-                    </p>
+                </div>
+
+                <p class="profile-bio">
+                    Interested in automation, process improvement, and optimization. I also enjoy diving into new datasets, uncovering insights, and building meaningful visualizations.
+                </p>
+
+                <nav class="profile-links" aria-label="Profile links">
+                    <a class="resume" href="resume.pdf">Resume</a>
+                    <a href="http://github.com/jeffcooperr" class="fa-brands fa-square-github" aria-label="GitHub"></a>
+                    <a href="http://www.linkedin.com/in/jeffcooperr" class="fa-brands fa-linkedin" aria-label="LinkedIn"></a>
                 </nav>
+
                 <section class="uvm-stuff">
                     <p>Burlington, VT & Boston, MA</p>
-                    <p>Computer Science at The University of Vermont</p>
-                    <p>Math & Business Administration Minors</p>
+                    <p>Computer Science @ UVM</p>
+                    <p>Minors in Math & Business Administration</p>
                 </section>
+            </div>
         </header>
 
         <div id="popup" class="popup" onclick="closePopup(event)">
@@ -46,24 +57,60 @@
 
         <div class="main">
             <div class="projects-container">
-                <div class="project">
-                    <img onclick="openPopup('ATO')" id="blurred" class="projects" src="images/analytics.png" alt="Against the Odds">
-                </div>
-                
-                <div class="project">
-                    <img onclick="openPopup('DEMO')" class="projects" src="images/demo.gif" alt="Demo Project">
-                </div>
-                
-                <div class="project">
-                    <img onclick="openPopup('BTV')" class="projects" src="images/sbltr.png" alt="BTV Sublet">
-                </div>
-                
-                <div class="project">
-                    <img onclick="openPopup('NC')" class="projects" src="images/neuralcanvas.png" alt="Neural Canvas">
+                <div class="project-card" onclick="openPopup('ATO')">
+                    <img class="project-thumb blurred" src="images/analytics.png" alt="Against the Odds">
+                    <div class="project-meta">
+                        <h2 class="project-title">Sports Analytics Webapp</h2>
+                        <p class="project-desc">A research tool for stat heads, fantasy team managers, and sports bettors who want deeper insight on the players they follow.</p>
+                    </div>
                 </div>
 
-                <div class="project">
-                    <img onclick="openPopup('LO')" class="projects" src="images/lightsout.gif" alt="Lights Out">
+                <div class="project-card" onclick="openPopup('CA')">
+                    <img class="project-thumb" src="images/classallo.gif" alt="Classroom Allocator">
+                    <div class="project-meta">
+                        <h2 class="project-title">Classroom Allocator</h2>
+                        <p class="project-desc">Exploring opportunities for classroom optimization across the University of Vermont campus.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('LL')">
+                    <img class="project-thumb" src="images/LinkedList - Gif.gif" alt="LinkedList">
+                    <div class="project-meta">
+                        <h2 class="project-title">LinkedList</h2>
+                        <p class="project-desc">Chrome extension that tracks LinkedIn job applications to Google Sheets and monitors Gmail for status updates.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('DEMO')">
+                    <img class="project-thumb" src="images/demo.gif" alt="Fab Simulation">
+                    <div class="project-meta">
+                        <h2 class="project-title">Fab Simulation</h2>
+                        <p class="project-desc">A manufacturing facility simulation with tools cycling through running, idle, error, and down states.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('BTV')">
+                    <img class="project-thumb" src="images/sbltr.png" alt="BTV Sublet">
+                    <div class="project-meta">
+                        <h2 class="project-title">Subletting Website</h2>
+                        <p class="project-desc">A student-focused site to post and browse sublets, with university-email verification for posting and contact details.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('NC')">
+                    <img class="project-thumb" src="images/neuralcanvas.png" alt="Neural Canvas">
+                    <div class="project-meta">
+                        <h2 class="project-title">Neural Canvas</h2>
+                        <p class="project-desc">An AI picture frame that turns voice prompts into generated images and displays them on a Raspberry Pi.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('LO')">
+                    <img class="project-thumb" src="images/lightsout.gif" alt="Lights Out">
+                    <div class="project-meta">
+                        <h2 class="project-title">Lights Out</h2>
+                        <p class="project-desc">An OpenGL/GLFW implementation of the classic puzzle game where each click toggles a light and its neighbors.</p>
+                    </div>
                 </div>
             </div>
         </div>

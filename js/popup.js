@@ -47,6 +47,20 @@ function openPopup(project) {
             content += '<br>';
             content += '<a class="github-links" href="https://github.com/jeffcooperr/fab-sim">Github Repository</a>'
             break;
+        case 'LL':
+            content += '<h1>LinkedList</h1>';
+            popupImg.src = 'images/LinkedList - Gif.gif';
+            content += '<p>Chrome extension that tracks LinkedIn job applications to a pre-formatted Google Sheet and monitors Gmail for status updates.</p>';
+            content += '<br>';
+            content += '<a class="github-links" href="https://github.com/jeffcooperr/linkedlist">Github Repository</a>';
+            break;
+        case 'CA':
+            content += '<h1>Classroom Allocator</h1>';
+            popupImg.src = 'images/classallo.gif';
+            content += '<p>Exploring opportunities for classroom optimization across the University of Vermont campus using Fall 2025 course schedule data.</p>';
+            content += '<br>';
+            content += '<a class="github-links" href="https://jeffcooperr.github.io/class_allo/">Live Site</a>';
+            break;
         default:
             popup.style.display = "none";
             return;

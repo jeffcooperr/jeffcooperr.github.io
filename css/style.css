@@ -1,15 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: #0b120b;
 }
 
 html {
     color: white;
 }
 
-.contact-links, .profile-header {
-    border: 1px solid black;
-}
+.contact-links, .profile-header { }
 
 
 a {
@@ -22,21 +21,71 @@ a:hover {
 }
 
 .pfp {
-    width: 150px;
+    width: 148px;
     border-radius: 50%;
-    margin: auto;
-    margin-top: 5px;
+    box-shadow: 0px 10px 22px rgba(0,0,0,0.4);
 }
 
 .profile-header{
-    text-align: center;
     background-image: linear-gradient(rgba(0, 50, 0, 0.8),rgba(1, 31, 0, 0.882)),url(../images/burlington.jpeg);
     width: 100%;
-    height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
     background-position: top;
+    padding: 22px 16px 14px;
+}
+
+.profile-inner {
+    width: min(860px, calc(100% - 32px));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 2.1rem;
+    letter-spacing: 0.2px;
+}
+
+.profile-contact {
+    margin: 0;
+    opacity: 0.95;
+}
+
+.profile-contact .sep {
+    opacity: 0.7;
+    padding: 0 8px;
+}
+
+.profile-bio {
+    margin: 6px 0 2px;
+    max-width: 62ch;
+    opacity: 0.95;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 6px;
+}
+
+.profile-links .fa-brands {
+    font-size: 1.9rem;
+    line-height: 1;
 }
 
 .resume, .github-links {
@@ -51,10 +100,12 @@ a:hover {
 }
 
 .projects-container {
+    width: min(1100px, calc(100% - 32px));
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14px;
     margin-top: 20px;
+    margin-bottom: 28px;
 }
 
 .projects {
@@ -69,6 +120,72 @@ a:hover {
 .projects:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+.project-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.project-thumb {
+    width: 260px;
+    height: 150px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+    background: rgba(0,0,0,0.2);
+}
+
+.project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.project-desc {
+    opacity: 0.9;
+    margin: 0;
+    max-width: 70ch;
+}
+
+@media (max-width: 700px) {
+    .projects-container {
+        width: calc(100% - 20px);
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .project-thumb {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
 }
 
 
@@ -87,6 +204,21 @@ h3 {
 
 .uvm-stuff p {
     margin:0;
+}
+
+@media (max-width: 520px) {
+    .profile-name {
+        font-size: 1.75rem;
+    }
+
+    .profile-contact .sep {
+        display: none;
+    }
+
+    .profile-contact a {
+        display: inline-block;
+        margin: 0 6px;
+    }
 }
 
 * {
