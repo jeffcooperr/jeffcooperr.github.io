@@ -10,21 +10,21 @@ function openPopup(project) {
 
     switch(project) {
         case 'ATO':
-            content += '<h1>Sports Analytics Webapp</h1>';
+            content += '<h1>Always Building</h1>';
             popupImg.src = 'images/analytics.png';
             popupImg.classList.add('blurred');
-            content += '<p>Combining my love for sports and data analytics, I am creating a research tool for stat heads, fantasy team managers, and sports bettors who want greater insight on the players they follow.</p>'
-content += '<p>Coming Soon</p>'
+            content += '<p>Always working on and brainstorming new projects. Let&apos;s work together!</p>'
+content += '<a class="github-links" href="https://github.com/jeffcooperr">GitHub</a>'
             break;
         case 'BTV':
             content += '<h1>Subletting Website</h1>';
-            popupImg.src = 'images/sbltr.png';
+            popupImg.src = 'images/sbltr.gif';
             content += '<p>This website is designed to help students find and post sublet opportunities. As many students look for off-campus housing or need to sublet their space, this website provides students with a simple way to post and browse available sublets. Users must sign up to post a listing or view contact details, ensuring all users are verified students through their university emails.</p>'
 content += '<a class="github-links" href="https://github.com/jeffcooperr/sbltr">Github Repository</a>'
             break;
         case 'NC':
             content += '<h1>Neural Canvas</h1>';
-            popupImg.src = 'images/neuralcanvas.png';
+            popupImg.src = 'images/nc.gif';
             content += "<p>Neural Canvas is an AI-powered picture frame that generates images based on user voice prompts. Using the SpeechRecognition library, the system detects wake words to initiate prompts, which are processed through OpenAI's API to generate images with DALL-E 3. The images are then displayed on the picture frame using the Feh image viewer. The project integrates a Raspberry Pi to manage hardware components and handle voice input, image generation, and display functionality.</p>"
 content += '<a class="github-links" href="https://github.com/jeffcooperr/neural-canvas">Github Repository</a>'
             break;
