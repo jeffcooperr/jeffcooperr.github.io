@@ -47,6 +47,12 @@ content += '<a class="github-links" href="https://github.com/jeffcooperr/fab-sim
             content += '<p>Chrome extension that tracks LinkedIn job applications to a pre-formatted Google Sheet and monitors Gmail for status updates.</p>';
 content += '<a class="github-links" href="https://github.com/jeffcooperr/linkedlist">Github Repository</a>';
             break;
+        case 'PREREQ':
+            content += '<h1>Prereq Graphs</h1>';
+            popupImg.src = 'images/prereq.gif';
+            content += '<p>Work in progress: visualizing course prerequisite relationships. I am in the process of making this more digestible and usable.</p>';
+content += '<a class="github-links" href="https://github.com/jeffcooperr/prereq_graphs">Github Repository</a>';
+            break;
         case 'CA':
             content += '<h1>Classroom Allocator</h1>';
             popupImg.src = 'images/classallo.gif';
