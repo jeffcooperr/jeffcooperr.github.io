@@ -50,8 +50,9 @@ content += '<a class="github-links" href="https://github.com/jeffcooperr/linkedl
         case 'PREREQ':
             content += '<h1>Prereq Graphs</h1>';
             popupImg.src = 'images/prereq.gif';
-            content += '<p>Work in progress: visualizing course prerequisite relationships. I am in the process of making this more digestible and usable.</p>';
-content += '<a class="github-links" href="https://github.com/jeffcooperr/prereq_graphs">Github Repository</a>';
+            content += '<p>Visualizing course prerequisite relationships as interactive graphs.</p>';
+            content += '<a class="github-links" href="https://jeffcooperr.github.io/prereq_graphs">Live Site</a>';
+            content += '<a class="github-links" href="https://github.com/jeffcooperr/prereq_graphs">Github Repository</a>';
             break;
         case 'CA':
             content += '<h1>Classroom Allocator</h1>';
